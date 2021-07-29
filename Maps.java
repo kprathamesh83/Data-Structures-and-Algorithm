@@ -26,6 +26,8 @@ public class Random{
         Set<Entry<Integer, Integer>> set = hm.entrySet();  // entrySet() return Set of hashMap 
         List<Entry<Integer, Integer>> ll = new ArrayList<>(set); 
          
+    
+         // Using Comparator 
          Collections.sort(ll, new Comparator<Entry<Integer, Integer>>(){
 
             @Override
@@ -35,6 +37,9 @@ public class Random{
             }
              
          });
+       
+         // Using Lambdas
+       //  Collections.sort(ll, (o1, o2) -> o1.getValue.compareTo(o2.getValue));  
          
          System.out.println(ll.size());
          int a = ll.get(ll.size()-1).getKey();
