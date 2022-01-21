@@ -12,8 +12,7 @@ int main(){
              } 
          }
     }
-    for (int i : a)
-    {
+    for (int i : a){
         cout<<i<<" ";
     }
     
